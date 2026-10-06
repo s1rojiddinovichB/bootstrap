@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Elements | DashboardKit</title>
+    <meta name="description" content="Bootstrap 5 Admin Template - Form Elements page." />
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .form-label { font-size: 0.875rem; font-weight: 500; color: #475569; }
+        .section-title { font-size: 0.8rem; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+
+    <!-- ===== Sidebar ===== -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <div class="brand-icon"><i class="bi bi-grid-fill"></i></div>
+            <span class="brand-name">DashboardKit</span>
+        </div>
+
+        <ul class="sidebar-nav">
+            <li><div class="sidebar-label">Navigation</div></li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"><i class="bi bi-house-door"></i> Dashboard</a>
+            </li>
+
+            <li><div class="sidebar-label">Elements <small>UI Components</small></div></li>
+            <li class="nav-item">
+                <a href="basic.html" class="nav-link">
+                    <i class="bi bi-briefcase"></i> Basic
+                    <i class="bi bi-chevron-right arrow"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"><i class="bi bi-emoji-smile"></i> Icons</a>
+            </li>
+
+            <li><div class="sidebar-label">Forms</div></li>
+            <li class="nav-item">
+                <a href="form-elements.html" class="nav-link active">
+                    <i class="bi bi-pencil"></i> Forms Elements
+                    <i class="bi bi-chevron-right arrow"></i>
+                </a>
+            </li>
+
+            <li><div class="sidebar-label">Table</div></li>
+            <li class="nav-item">
+                <a href="bootstrap-table.html" class="nav-link">
+                    <i class="bi bi-table"></i> Bootstrap table
+                </a>
+            </li>
+
+            <li><div class="sidebar-label">Chart &amp; Maps <small>Tones Of Readymade Charts</small></div></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-bar-chart"></i> Chart</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-geo-alt"></i> Maps</a></li>
+
+            <li><div class="sidebar-label">Pages <small>Redymade Pages</small></div></li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"><i class="bi bi-lock"></i> Authentication <i class="bi bi-chevron-right arrow"></i></a>
+            </li>
+
+            <li><div class="sidebar-label">Other <small>Extra More Things</small></div></li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"><i class="bi bi-list-nested"></i> Menu levels <i class="bi bi-chevron-right arrow"></i></a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-file-earmark"></i> Sample page</a></li>
+        </ul>
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- ===== Main Content ===== -->
+    <div class="main-content">
+        <header class="topbar">
+            <div class="d-flex align-items-center gap-3">
+                <button class="hamburger" id="hamburgerBtn" aria-label="Toggle sidebar">
+                    <span></span><span></span><span></span>
+                </button>
+                <span class="page-title">Form Elements</span>
+            </div>
+            <div class="topbar-right">
+                <div class="topbar-icon"><i class="bi bi-search"></i></div>
+                <div class="topbar-icon"><i class="bi bi-bell"></i></div>
+                <div class="topbar-icon"><i class="bi bi-gear"></i></div>
+                <div class="avatar">A</div>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <div class="page-header">
+                <h1>Form Elements</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Forms</a></li>
+                        <li class="breadcrumb-item active">Form Elements</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="row">
+
+                <!-- ===== Basic Inputs ===== -->
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header"><i class="bi bi-input-cursor me-2"></i>Basic Inputs</div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="inputText" class="form-label">Text Input</label>
+                                <input type="text" class="form-control" id="inputText" placeholder="Enter text here..." />
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputEmail" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Enter password..." />
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputNumber" class="form-label">Number Input</label>
+                                <input type="number" class="form-control" id="inputNumber" placeholder="0" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputDate" class="form-label">Date Input</label>
+                                <input type="date" class="form-control" id="inputDate" />
+                            </div>
+                            <div class="mb-0">
+                                <label for="inputTextarea" class="form-label">Textarea</label>
+                                <textarea class="form-control" id="inputTextarea" rows="3" placeholder="Enter your message..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== Input States ===== -->
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header"><i class="bi bi-sliders me-2"></i>Input States</div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label class="form-label">Disabled Input</label>
+                                <input type="text" class="form-control" value="Disabled value" disabled />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Readonly Input</label>
+                                <input type="text" class="form-control" value="Readonly value" readonly />
+                            </div>
+                            <div class="mb-3">
+                                <label for="validSuccess" class="form-label">Valid Input</label>
+                                <input type="text" id="validSuccess" class="form-control is-valid" value="Correct value" />
+                                <div class="valid-feedback">Looks good!</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="validError" class="form-label">Invalid Input</label>
+                                <input type="text" id="validError" class="form-control is-invalid" value="Wrong value" />
+                                <div class="invalid-feedback">Please provide a valid value.</div>
+                            </div>
+                            <div class="mb-0">
+                                <label for="inputRange" class="form-label">Range Input</label>
+                                <input type="range" class="form-range" id="inputRange" min="0" max="100" value="50" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== Select & Checkboxes ===== -->
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header"><i class="bi bi-ui-checks me-2"></i>Select &amp; Checkboxes</div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="selectBasic" class="form-label">Basic Select</label>
+                                <select class="form-select" id="selectBasic">
+                                    <option selected>Select an option</option>
+                                    <option value="1">Option One</option>
+                                    <option value="2">Option Two</option>
+                                    <option value="3">Option Three</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="selectMultiple" class="form-label">Multiple Select</label>
+                                <select class="form-select" id="selectMultiple" multiple>
+                                    <option value="1">Option One</option>
+                                    <option value="2">Option Two</option>
+                                    <option value="3">Option Three</option>
+                                    <option value="4">Option Four</option>
+                                </select>
+                            </div>
+                            <p class="section-title mt-3">Checkboxes</p>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="check1" checked />
+                                <label class="form-check-label" for="check1">Default checkbox (checked)</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="check2" />
+                                <label class="form-check-label" for="check2">Second checkbox</label>
+                            </div>
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox" id="check3" disabled />
+                                <label class="form-check-label" for="check3">Disabled checkbox</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== Radio & Switch & Input Group ===== -->
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header"><i class="bi bi-toggle-on me-2"></i>Radio, Switch &amp; Input Group</div>
+                        <div class="card-body">
+                            <p class="section-title">Radio Buttons</p>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radioGroup" id="radio1" checked />
+                                <label class="form-check-label" for="radio1">Radio button one</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="radioGroup" id="radio2" />
+                                <label class="form-check-label" for="radio2">Radio button two</label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="radioGroup" id="radio3" disabled />
+                                <label class="form-check-label" for="radio3">Disabled radio</label>
+                            </div>
+
+                            <p class="section-title">Toggle Switch</p>
+                            <div class="form-check form-switch mb-2">
+                                <input class="form-check-input" type="checkbox" role="switch" id="switch1" checked />
+                                <label class="form-check-label" for="switch1">Toggle on (default)</label>
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" role="switch" id="switch2" />
+                                <label class="form-check-label" for="switch2">Toggle off</label>
+                            </div>
+
+                            <p class="section-title">Input Group</p>
+                            <div class="input-group mb-2">
+                                <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                <input type="text" class="form-control" placeholder="Username" />
+                            </div>
+                            <div class="input-group mb-2">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" placeholder="Email address" />
+                            </div>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search..." />
+                                <button class="btn btn-primary" type="button"><i class="bi bi-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== Complete Form Example ===== -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header"><i class="bi bi-person-lines-fill me-2"></i>Complete Registration Form</div>
+                        <div class="card-body">
+                            <form novalidate id="registrationForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="regFirstName" class="form-label">First Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="regFirstName" placeholder="John" required />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="regLastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="regLastName" placeholder="Doe" required />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="regEmail" class="form-label">Email <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" id="regEmail" placeholder="john@example.com" required />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="regPhone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="regPhone" placeholder="+998 90 000 00 00" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="regCountry" class="form-label">Country</label>
+                                        <select class="form-select" id="regCountry">
+                                            <option value="">Select country</option>
+                                            <option>Uzbekistan</option>
+                                            <option>Russia</option>
+                                            <option>Kazakhstan</option>
+                                            <option>USA</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="regBirthdate" class="form-label">Birthdate</label>
+                                        <input type="date" class="form-control" id="regBirthdate" />
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="regBio" class="form-label">About / Bio</label>
+                                        <textarea class="form-control" id="regBio" rows="3" placeholder="Tell us about yourself..."></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="regAgree" required />
+                                            <label class="form-check-label" for="regAgree">
+                                                I agree to the <a href="#" class="text-primary">Terms and Conditions</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex gap-2">
+                                        <button type="submit" class="btn btn-primary"><i class="bi bi-check2-circle me-1"></i>Register</button>
+                                        <button type="reset" class="btn btn-outline-secondary"><i class="bi bi-x-circle me-1"></i>Reset</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            &copy; 2024 DashboardKit. Made with <i class="bi bi-heart-fill text-danger"></i> using Bootstrap 5.
+        </footer>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const hamburger = document.getElementById('hamburgerBtn');
+    const sidebar   = document.getElementById('sidebar');
+    const overlay   = document.getElementById('sidebarOverlay');
+    hamburger.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+        overlay.classList.toggle('show');
+    });
+    overlay.addEventListener('click', () => {
+        sidebar.classList.remove('open');
+        overlay.classList.remove('show');
+    });
+</script>
+</body>
+</html>
